@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+struct employee
+{
+	int number;
+	float salary;
+};
+int main(){
+	setlocale(LC_ALL, "Russian");
+	employee s1, s2, s3;
+	cout << "Введите номер сотрудника:  ";
+	cin >> s1.number;
+	cout << "Введите зарплату сотрудника:  ";
+	cin >> s1.salary;
+	cout << "Введите номер сотрудника:  ";
+	cin >> s2.number;
+	cout << "Введите зарплату сотрудника :  ";
+	cin >> s2.salary;
+	cout << "Введите номер сотрудника:  ";
+	cin >> s3.number;
+	cout << "Введите зарплату сотрудника:  ";
+	cin >> s3.salary;
+	cout << endl;
+	
+
+	cout << "Первый сотрудник: " << endl << s1.number << endl << "Зарплата:  " <<s1.salary <<endl;
+	cout << "Второй сотрудник: " << endl << s2.number << endl << "Зарплата:  " << s2.salary << endl;
+	cout << "Третий сотрудник: " << endl << s3.number << endl << "Зарплата:  " << s3.salary << endl;
+	
+}
+ 
