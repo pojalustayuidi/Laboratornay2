@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+struct times
+{
+	int hours;
+	int minutes;
+	int seconds;
+};
+int main() {
+	setlocale(LC_ALL, "Russian");
+	times time1,time2,timesum;
+	float totalsecond1, totalsecond2;
+	long totalsecond;
+	char q;
+	cout << "Введите первое время в формате hh:mm:ss :    ";
+	cin >> time1.hours >> q >> time1.minutes >> q >> time1.seconds;
+	cout << "Введите второе время в формате hh:mm:ss :    ";
+	cin >> time2.hours >> q >> time2.minutes >> q >> time2.seconds;
+	totalsecond1 = (time1.hours * 3600) + (time1.minutes * 60) + time1.seconds;
+	totalsecond2 = (time2.hours * 3600) + (time2.minutes * 60) + time2.seconds;
+	totalsecond = totalsecond1 + totalsecond2;
+	timesum.hours = (totalsecond / 3600) % 24;
+	timesum.minutes = (totalsecond / 60) % 60;
+	timesum.seconds = totalsecond % 60;
+
+	cout << timesum.hours << ":" << timesum.minutes << ":" << timesum.seconds;
+
+
+}
