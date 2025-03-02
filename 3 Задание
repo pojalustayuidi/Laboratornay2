@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+struct fraction
+{
+	int numerator;
+	int denominator;
+};
+int main(){
+	setlocale(LC_ALL, "Russian");
+	char q;
+	fraction num1, num2, sum;
+	cout << "Введите первую дробь (в формате x/y) :  ";
+	cin >> num1.numerator >> q >> num1.denominator; // a*d + b * c числитель
+	cout << "Введите вторую дробь(в формате x/y) :  ";
+	cin >> num2.numerator >> q >> num2.denominator;
+	sum.numerator = (num1.numerator * num2.denominator) + (num1.denominator * num2.numerator);
+	sum.denominator = num2.denominator * num1.denominator;
+	cout << "Результат сложения:  " <<sum.numerator << "/" << sum.denominator;
+}
