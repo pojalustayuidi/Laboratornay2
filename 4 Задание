@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+struct times
+{
+	int hours;
+	int minutes;
+	int seconds;
+};
+int main() {
+	setlocale(LC_ALL, "Russian");
+	times time1;
+	long totalsecond;
+	cout << "Введите количество часов:  ";
+	cin >> time1.hours;
+	cout << "Введите количество минут:  ";
+	cin >> time1.minutes;
+	cout << "Введите количество секунд:  ";
+	cin >> time1.seconds;
+	totalsecond = (time1.hours * 3600) + (time1.minutes * 60) + time1.seconds;
+	cout << "Всего секунд:  " <<totalsecond;
+
+}
